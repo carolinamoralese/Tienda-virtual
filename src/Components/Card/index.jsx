@@ -4,7 +4,7 @@ const Card = (data) => {
       <figure className="relative mb-4 w-full h-5/6 flex flex-col justify-center items-center">
         <span className="absolute bottom-0 left-0 bg-white/60 rounded-lg text-black text-xs m-2 px-3 py-0,5 mr-2 line-clamp-2">{data.data.category}</span>
         <img className="w-full h-full rounded-lg" src={data.data.image} alt={data.data.description} style={{ maxWidth: '80%', maxHeight: '90%' }} />
-        <div className="bg-slate-100 absolute top-0 right-0 flex justify-center items-center bg-white -6 h-6 rounded-full m-2 p-1">
+        <div className="bg-slate-100 absolute top-0 right-0 flex justify-center items-center bg-slate-100 w-6 h-6 rounded-full m-2 p-1">
           +
         </div>
       </figure>

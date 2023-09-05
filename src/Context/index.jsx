@@ -1,12 +1,16 @@
-import { createContext } from "react"
+import { createContext, useState } from "react"
 
-const shoppingCarConext = createContext()
+export const ShoppingCarConext = createContext()
 
-export const shoppingCarProvider = ({children}) =>{
+export const ShoppingCarProvider = ({children}) =>{
+    const [count, setCount] = useState(0);
     return(
-        <shoppingCarConext.Provider>
+        <ShoppingCarConext.Provider value={{
+            count,//se manda el valor a leer y el valor a modificar a todos los hijos
+            setCount
+        }}>
             {children}
-        </shoppingCarConext.Provider>
+        </ShoppingCarConext.Provider>
        
     )
 }

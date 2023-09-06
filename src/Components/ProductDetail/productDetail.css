@@ -1,0 +1,5 @@
+/* Estilos base para el componente ProductDetail */
+.product-detail {
+  width: 360px;
+  height: calc(100vh - 75px);
+}

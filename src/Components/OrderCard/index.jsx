@@ -1,6 +1,6 @@
 import { TrashIcon } from "@heroicons/react/24/solid";
 
-const OrderCard = ({title, imageUrl, price}) => {
+const OrderCard = ({id, title, imageUrl, price, handDelete }) => {
     return (
         <div className="flex justify-between items-center mb-3">
             <div className="flex items-center gap-2">
@@ -11,7 +11,7 @@ const OrderCard = ({title, imageUrl, price}) => {
             </div>
             <div className="flex items-center gap-2">
                 <p className="text-lg font-medium">{price}</p>
-                <TrashIcon className="h-5 w-5 text-black-500 cursor-pointer" />
+                <TrashIcon onClick={() => handDelete(id)} className="h-5 w-5 text-black-500 cursor-pointer" />
             </div>
         </div>
     )

@@ -7,6 +7,14 @@ import "./CheckoutSideMenu.css";
 const CheckoutSideMenu = () => {
   const context = useContext(ShoppingCarConext);
 
+  const handDelete = (id) => {
+    const filterProducts = context.carProducts.filter(product => product.id != id)
+    context.setCarProducts(filterProducts)
+    context.setCount(context.count-1)
+  
+   
+  };
+
   const handleClose = () => {
     context.closeCheckoutSideMenu();
   };
@@ -20,7 +28,6 @@ const CheckoutSideMenu = () => {
         width: "380px",
         height: "600px",
         margin: "20px",
-        overflowY: "scroll",
       }}
     >
       <div className="flex justify-between items-center p-6">
@@ -29,13 +36,15 @@ const CheckoutSideMenu = () => {
           <XCircleIcon className="h-8 w-8 text-black-500 cursor-pointer" />
         </div>
       </div>
-      <div className="px-6">
+      <div className="px-6 overflow-y-scroll">
         {context.carProducts.map((product) => (
           <OrderCard
             key={product.id}
+            id={product.id}
             title={product.title}
             imageUrl={product.image}
             price={product.price}
+            handDelete={handDelete}
           />
         ))}
       </div>

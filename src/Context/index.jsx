@@ -32,6 +32,7 @@ export const ShoppingCarProvider = ({children}) =>{
     //shopping car- add products to carr
     const[carProducts,setCarProducts]= useState([])
 
+
     return(
         <ShoppingCarConext.Provider value={{
             count,//se manda el valor a leer y el valor a modificar a todos los hijos

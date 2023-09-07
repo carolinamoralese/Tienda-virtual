@@ -1,0 +1,9 @@
+/* Estilos base para el componente ProductDetail */
+.product-detail {
+    width: 400px;
+    height: calc(100vh - 75px);
+    overflow: hidden;
+  }
+  .auto-height {
+    height: auto; /* Esto permite que la altura se ajuste automáticamente al contenido */
+  }

@@ -15,8 +15,22 @@ export const ShoppingCarProvider = ({children}) =>{
         setIsProductDetailOpen(false)
     }
 
+
+      //checkoutside menu open/close
+      const [isCheckoutSideMenu, setIsCheckoutSideMenu] = useState(false);
+      const openCheckoutSideMenu = () => {
+          setIsCheckoutSideMenu(true)
+      }
+      const closeCheckoutSideMenu = () => {
+          setIsCheckoutSideMenu(false)
+      }
+
     //Product detail - show product
     const[productToShow,setProductToShow]= useState({})
+
+
+    //shopping car- add products to carr
+    const[carProducts,setCarProducts]= useState([])
 
     return(
         <ShoppingCarConext.Provider value={{
@@ -26,7 +40,12 @@ export const ShoppingCarProvider = ({children}) =>{
             closeProductDetail,
             isProductDetailOpen,
             productToShow,
-            setProductToShow
+            setProductToShow,
+            carProducts,
+            setCarProducts,
+            isCheckoutSideMenu,
+            openCheckoutSideMenu,
+            closeCheckoutSideMenu,
         }}>
             {children}
         </ShoppingCarConext.Provider>

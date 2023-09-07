@@ -1,5 +1,7 @@
 /* Estilos base para el componente ProductDetail */
-.product-detail {
+.checkout-side-menu {
   width: 400px;
   height: calc(100vh - 75px);
+  overflow: hidden;
+  top: 75px;
 }

@@ -19,7 +19,7 @@ const ProductDetail = () => {
         width: "380px",
         height: "600px",
         margin: "20px",
-        overflowY: "scroll", // Agregar la propiedad para habilitar el scroll vertical
+        overflowY: "scroll",
       }}
     >
       <div className="flex justify-between items-center p-6">

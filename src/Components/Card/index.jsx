@@ -62,7 +62,7 @@ const Card = (data) => {
         <span className="text-xs font-light mr-2 line-clamp-2">
           {data.data.title}
         </span>
-        <spa className="text-lg font-medium mr-2">${data.data.price}</spa>
+        <span className="text-lg font-medium mr-2">${data.data.price}</span>
       </p>
     </div>
   );

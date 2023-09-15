@@ -1,9 +1,11 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { ShoppingCarConext } from "../../Context";
 import { XCircleIcon } from "@heroicons/react/24/solid";
 import OrderCard from "../../Components/OrderCard";
 import { totalPrice } from "../../utils";
 import "./CheckoutSideMenu.css";
+
 
 const CheckoutSideMenu = () => {
   const context = useContext(ShoppingCarConext);
@@ -21,9 +23,9 @@ const CheckoutSideMenu = () => {
   const handleCheckout = () => {
     const orderToAdd = {
       date: '01.02.23',
-      products: context.cartProducts,
-      totalProducts: context.cartProducts,
-      totalPrice: totalPrice(context.cartProducts)
+      products: context.carProducts,
+      totalProducts: context.cartroducts,
+      totalPrice: totalPrice(context.cartroducts)
     }
 
     context.setOrder([...context.order, orderToAdd])
@@ -65,7 +67,10 @@ const CheckoutSideMenu = () => {
             <span className="font-light">Total:</span>
             <span className="font-medium text-2xl">${totalPrice(context.carProducts)}</span>
           </p>
+          <Link to='/my-orders/last'>
           <button className='bg-black py-3 text-white w-full rounded-lg' onClick={() => handleCheckout()}>Checkout</button>
+          </Link>
+          
       </div>
     </aside>
   );

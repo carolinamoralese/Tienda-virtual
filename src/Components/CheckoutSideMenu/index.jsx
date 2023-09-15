@@ -24,8 +24,8 @@ const CheckoutSideMenu = () => {
     const orderToAdd = {
       date: '01.02.23',
       products: context.carProducts,
-      totalProducts: context.cartroducts,
-      totalPrice: totalPrice(context.cartroducts)
+      totalProducts: context.carProducts.length,
+      totalPrice: totalPrice(context.carProducts)
     }
 
     context.setOrder([...context.order, orderToAdd])

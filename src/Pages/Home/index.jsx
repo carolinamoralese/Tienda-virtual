@@ -8,7 +8,7 @@ function Home() {
   const context = useContext(ShoppingCarConext);
 
   const renderView = () => {
-    if (context.searchByTitle?.length > 0) {
+
       if (context.filteredItems?.length > 0) {
         return (
           context.filteredItems?.map(item => (
@@ -20,13 +20,7 @@ function Home() {
           <div>We don't have anything</div>
         )
       }
-    } else {
-      return (
-        context.items?.map(item => (
-          <Card key={item.id} data={item} />
-        ))
-      )
-    }
+  
   }
 
 
@@ -36,7 +30,7 @@ function Home() {
       <input
       type="text"
       placeholder="Busca tu producto"
-      className="rounded-lg border border-black w-80 p-4 mb-4 focus:outline-none"
+      className="rounded-lg border border-black w-80 h-10 mb-4 focus:outline-none text-center justify-center"
       onChange={(event) => context.setSearchByTitle(event.target.value)} />
       <div className="grid gap-6 grid-cols-3 w-full max-w-screen-lg bg-slate-100">
       {renderView()}

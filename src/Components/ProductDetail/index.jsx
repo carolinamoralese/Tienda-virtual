@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ShoppingCarConext } from "../../Context";
 import { XCircleIcon } from "@heroicons/react/24/solid";
-import "./ProductDetail.css";
+import "./productDetail.css";
 
 const ProductDetail = () => {
   const context = useContext(ShoppingCarConext);

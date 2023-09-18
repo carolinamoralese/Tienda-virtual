@@ -1,4 +1,6 @@
 # Tienda Virtual con React.js, Vite.js y Tailwind CSS
+https://tienda-virtual-j6efq9dyr-carolinamoralese.vercel.app/
+
 
 ## Tienda Virtual
 Este proyecto es una tienda virtual que permite a los usuarios explorar y comprar una amplia variedad de productos, incluyendo ropa de mujer, ropa de hombre, joyería y tecnología. La tienda se conecta a una API gratuita que proporciona información detallada sobre los productos disponibles, incluyendo descripciones y precios.
@@ -20,10 +22,6 @@ Utilización de la librería Tailwind CSS para una estilización eficiente y atr
 ## Demo
 
 https://github.com/carolinamoralese/Tienda-virtual/assets/130382737/72054d9d-ced3-43d1-8ef8-1daed182614c
-
-
-
-## Capturas de Pantalla
 
 
 

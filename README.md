@@ -1,19 +1,27 @@
 # Tienda Virtual con React.js, Vite.js y Tailwind CSS
 
-Esta es una tienda virtual desarrollada como parte del curso de React.js con Vite.js y Tailwind CSS. La aplicación consume una API falsa y permite a los usuarios ver productos, sus precios y agregar productos al carrito de compras. Además, ofrece la funcionalidad de filtrar productos por categorías, como ropa, accesorios, electrodomésticos y más.
+## Tienda Virtual
+Este proyecto es una tienda virtual que permite a los usuarios explorar y comprar una amplia variedad de productos, incluyendo ropa de mujer, ropa de hombre, joyería y tecnología. La tienda se conecta a una API gratuita que proporciona información detallada sobre los productos disponibles, incluyendo descripciones y precios.
+
+## Características Principales
+- Visualiza todos los productos disponibles.
+- Accede a descripciones detalladas de los productos.
+- Agrega productos al carrito de compras.
+- Calcula automáticamente el total de la compra a medida que se agregan productos al carrito.
+- Filtra los productos por categoría para facilitar la navegación.
+- Funcionalidad de búsqueda.
+- Accede a un historial de órdenes que muestra las órdenes actuales y anteriores realizadas por el cliente.
+- Interfaz de usuario atractiva con el uso de Tailwind CSS.
+
+## Tecnologías Utilizadas
+HTML, CSS, JavaScript y React.
+Utilización de la librería Tailwind CSS para una estilización eficiente y atractiva de la interfaz de usuario.
 
 ## Demo
-[![grabacion]([src/Grabación de pantalla 2023-09-15 a la(s) 7.33.21 p.m..mov](https://github.com/carolinamoralese/Tienda-virtual/blob/950b80a2aeb3004e0aed3338be5bf3b024e744aa/src/Grabacio%CC%81n%20de%20pantalla%202023-09-15%20a%20la(s)%207.33.21%20p.m..mov))
+
+https://github.com/carolinamoralese/Tienda-virtual/assets/130382737/72054d9d-ced3-43d1-8ef8-1daed182614c
 
 
-## Características
-
-- Visualización de productos con imágenes, nombres y precios.
-- Funcionalidad de búsqueda y filtrado por categorías.
-- Carrito de compras para agregar y eliminar productos.
-- Cálculo del total de la compra en el carrito.
-- Interfaz de usuario atractiva con el uso de Tailwind CSS.
-- Consumo de datos de una API falsa para simular un catálogo de productos.
 
 ## Capturas de Pantalla
 
